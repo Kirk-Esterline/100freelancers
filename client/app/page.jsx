@@ -9,8 +9,37 @@ export default function Home() {
     return (
         <main className = "border-t-4 border-accent pt-8">
             {/* Adding the elements from the homepage layout.  images located in the 'public' folder */}
+           
             <section className="floats block lg:flex flex-row justify-between mt-0">
-                <ul className='p-0 pt-4 w-full lg:w-2/5'>
+                
+                <section className="sm:hidden flex flex-nowrap w-full overflow-scroll">{/*section visible on mobile otherwise hidden*/}
+                    <div className='w-10/12'>
+                        <h3>VIEW</h3>
+                        <p>CONTACTED BUSINESSES</p>
+                        <img 
+                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-0 mb-8'
+                            src="/view.png" 
+                            alt="Screenshof of 100freelancers view clients page" />
+                    </div>
+                    <div className='w-10/12'>
+                        <h3>ADD</h3>
+                        <p>NEW CLIENTS</p>
+                        <img 
+                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-0 mb-8'
+                            src="/outreach-one.png" 
+                            alt="Screenshot of 100freelancers outreach page" />
+                    </div>
+                    <div className='w-10/12'>
+                        <h3>TRACK</h3>
+                        <p>ONGOING OUTREACH</p>
+                        <img 
+                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-.5'
+                            src="/outreach-two.png" 
+                            alt="Screenhot of 100freelancers outreach tracking page" />
+                    </div>
+                </section>
+
+                <ul className='hidden sm:block p-0 pt-4 w-full lg:w-2/5'> {/*ul hidden on mobile, block on larger screens*/}
                     <li>
                         <h3>VIEW</h3>
                         <p>CONTACTED BUSINESSES</p>
@@ -24,9 +53,9 @@ export default function Home() {
                         <p>ONGOING OUTREACH</p>
                     </li>
                 </ul>
-                <div className="flex flex-col-reverse items-center lg:w-3/5 lg:flex-row lg:relative ">
+                <div className="flex flex-col-reverse items-center lg:w-3/5 lg:flex-row lg:relative "> {/*hidden on mobile*/}
                     <img
-                        className="border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-8 lg:relative xl:left-[-3rem] xl:bottom-[-5rem] lg:z-10 lg:bottom-[-2rem]"
+                        className="hidden sm:block border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-8 lg:relative xl:left-[-3rem] xl:bottom-[-5rem] lg:z-10 lg:bottom-[-2rem]"
                         src="/outreach-one.png"
                         alt='Screenshot of 100freelancers outreach page'
                     />
