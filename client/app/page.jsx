@@ -12,8 +12,8 @@ export default function Home() {
            
             <section className="floats block lg:flex flex-row justify-between mt-0">
                 
-                <section className="sm:hidden flex flex-nowrap w-full overflow-scroll">{/*section visible on mobile otherwise hidden*/}
-                    <div className='w-10/12'>
+                <section className="snap-x sm:hidden flex flex-nowrap w-full overflow-scroll">{/*section visible on mobile, otherwise hidden*/}
+                    <div className='flex-none snap-center w-80 ml-1'>
                         <h3>VIEW</h3>
                         <p>CONTACTED BUSINESSES</p>
                         <img 
@@ -21,7 +21,7 @@ export default function Home() {
                             src="/view.png" 
                             alt="Screenshof of 100freelancers view clients page" />
                     </div>
-                    <div className='w-10/12'>
+                    <div className='flex-none snap-center w-80'>
                         <h3>ADD</h3>
                         <p>NEW CLIENTS</p>
                         <img 
@@ -29,7 +29,7 @@ export default function Home() {
                             src="/outreach-one.png" 
                             alt="Screenshot of 100freelancers outreach page" />
                     </div>
-                    <div className='w-10/12'>
+                    <div className='flex-none snap-center w-80'>
                         <h3>TRACK</h3>
                         <p>ONGOING OUTREACH</p>
                         <img 
