@@ -113,11 +113,11 @@ input:not([type="checkbox"]) {
 /* Landing page */
 
 .floats h3 {
-	@apply text-center text-3xl lg:text-left sm:text-7xl text-accent ;
+	@apply text-center text-3xl min-[475px]:text-5xl lg:text-left sm:text-7xl text-accent ;
 }
 
 .floats p {
-	@apply text-center text-lg lg:text-left sm:text-3xl lg:ml-10 font-bold pb-10  ;
+	@apply text-center text-lg min-[475px]:text-2xl lg:text-left sm:text-3xl lg:ml-10 font-bold pb-10  ;
 }
 
 .btnCustom {

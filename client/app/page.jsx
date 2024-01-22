@@ -13,27 +13,27 @@ export default function Home() {
             <section className="floats block lg:flex flex-row justify-between mt-0">
                 
                 <section className="snap-x sm:hidden flex flex-nowrap w-full overflow-scroll">{/*section visible on mobile, otherwise hidden*/}
-                    <div className='flex-none snap-center w-80 ml-1'>
+                    <div className='flex-none snap-center w-96 ml-1 min-[475px]:w-[30rem] min-[560px]:w-[36rem]'>
                         <h3>VIEW</h3>
                         <p>CONTACTED BUSINESSES</p>
                         <img 
-                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-0 mb-8'
+                            className='mx-auto border-8 border-accent rounded-3xl w-64 min-[475px]:w-10/12 rounded-l-3xl mt-0 mb-8'
                             src="/view.png" 
                             alt="Screenshof of 100freelancers view clients page" />
                     </div>
-                    <div className='flex-none snap-center w-80'>
+                    <div className='flex-none snap-center w-96 min-[475px]:w-[30rem] min-[560px]:w-[36rem]'>
                         <h3>ADD</h3>
                         <p>NEW CLIENTS</p>
                         <img 
-                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-0 mb-8'
+                            className='mx-auto border-8 border-accent rounded-3xl w-64 min-[475px]:w-10/12 rounded-l-3xl mt-0 mb-8'
                             src="/outreach-one.png" 
                             alt="Screenshot of 100freelancers outreach page" />
                     </div>
-                    <div className='flex-none snap-center w-80'>
+                    <div className='flex-none snap-center w-96 min-[475px]:w-[30rem] min-[560px]:w-[36rem]'>
                         <h3>TRACK</h3>
                         <p>ONGOING OUTREACH</p>
                         <img 
-                            className='mx-auto border-8 border-accent rounded-3xl h-80 rounded-l-3xl mt-.5'
+                            className='mx-auto border-8 border-accent rounded-3xl w-64 min-[475px]:w-10/12 rounded-l-3xl mt-.5'
                             src="/outreach-two.png" 
                             alt="Screenhot of 100freelancers outreach tracking page" />
                     </div>
